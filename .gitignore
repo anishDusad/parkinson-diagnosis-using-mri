@@ -1,0 +1,48 @@
+# =====================
+# GENERAL
+# =====================
+.env
+.DS_Store
+*.log
+
+# =====================
+# PYTHON
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# =====================
+# NODE / REACT
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# =====================
+# VITE
+# =====================
+.vite/
+
+# =====================
+# IDE
+# =====================
+.vscode/
+.idea/
+
+# ML models
+models/*.pth
+
+node_modules

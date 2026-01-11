@@ -1,0 +1,66 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+body {
+  @apply bg-neutral-50 text-slate-900;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.app-root {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+.header {
+  @apply mb-6 flex items-center gap-4;
+}
+
+.title {
+  @apply text-2xl font-semibold text-brand-600;
+}
+
+.subtitle {
+  @apply text-sm text-slate-600;
+}
+
+/* Panels */
+.panel {
+  @apply bg-white rounded-2xl shadow-sm p-6 border border-slate-100;
+}
+
+/* File box */
+.file-info {
+  @apply mt-3 text-sm text-slate-500;
+}
+
+/* Logs */
+.log-box {
+  @apply bg-slate-50 border border-slate-100 rounded-lg p-4 h-80 overflow-auto font-mono text-sm text-slate-800;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm;
+}
+.btn-primary {
+  @apply bg-brand-600 text-white border-transparent hover:bg-brand-700;
+}
+.btn-ghost {
+  @apply bg-white text-slate-700 border-slate-200 hover:bg-slate-50;
+}
+
+/* Result */
+.result-card {
+  @apply mt-4 p-4 rounded-lg bg-gradient-to-r from-brand-50 to-white border border-slate-100;
+}
+.conf-row { @apply flex items-center justify-between gap-4; }
+.conf-bar {
+  @apply h-3 rounded bg-slate-200 overflow-hidden;
+}
+.conf-fill {
+  @apply h-full bg-brand-500 rounded;
+}

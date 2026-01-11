@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+torch
+torchvision
+numpy
+Pillow
+nibabel
+dicom2nifti
+ants
+antspynet
+scipy
+matplotlib
+python-multipart
