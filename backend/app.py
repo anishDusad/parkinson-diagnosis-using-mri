@@ -272,25 +272,21 @@ def run_prediction_logic(nifti_path, plane_choice, logger_func=None):
 #         if logger_func: logger_func(msg)
 #         else: print(msg)
 
-#     # --- TEMPORARY RANDOM PREDICTION OVERRIDE ---
+#     # --- TEMPORARY RANDOM PREDICTION OVERRIDE 
 #     log("⚠️ Model inference is temporarily overridden with random results (58%-73%).")
 
 #     # 1. Generate random confidence (58.0% to 73.0%)
 #     import random
 #     # Generate a float between 0.58 and 0.73, rounded to 4 decimal places
 #     final_confidence = round(random.uniform(0.58, 0.73), 4)
-    
 #     # 2. Assign the prediction to PD (since 75% was the common output)
 #     final_label = "pd"
-    
 #     # 3. Calculate remaining probability and distribute it to other classes
 #     remaining_prob = 1.0 - final_confidence
-    
 #     # Distribute the remaining probability (e.g., 80% to Control, 20% to Prodromal)
 #     # This ensures the other classes change slightly for a more 'realistic' feel.
 #     control_prob = round(remaining_prob * 0.8, 4)
 #     prodromal_prob = round(remaining_prob * 0.2, 4)
-
 #     # 4. Assemble the result dictionary
 #     result = {
 #         "final_label": final_label,
