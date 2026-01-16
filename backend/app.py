@@ -401,7 +401,6 @@ async def predict_stream(file: UploadFile = File(...), plane_choice: str = Form(
             plane_results = []
             plane_details = {}
         
-
             # for pl in selected_planes:
             #     yield f"Extracting & Analyzing {pl} plane...\n"
             #     slices = extract_center_slices(preproc_path, pl)
