@@ -402,30 +402,6 @@ async def predict_stream(file: UploadFile = File(...), plane_choice: str = Form(
             plane_details = {}
             
 
-            for pl in selected_planes:
-                # -------------------------------------------------------------
-                # NOTE: The actual inference code (predict_slices) is SKIPPED HERE
-                # -------------------------------------------------------------
-                
-                # Store dummy data for the output structure (using a fixed mean_prob for structure)
-                plane_details[pl] = {
-                    "n_slices": 15, # Use a fixed number of slices for the report structure
-                    "per_class_mean": {"control": 0.33, "pd": 0.33, "prodromal": 0.34} # Dummy data
-                }
-                yield f"Extracting & Analyzing {pl} plane...\n"
-                yield f"{pl} analysis done. \n" # Updated log line
-
-            # Fusion Bypass: Calculate the random final result instead of fusing plane_results
-            yield "Calculating final weighted fusion... \n"
-
-            # 1. Generate random confidence (58.0% to 73.0%)
-            final_confidence = round(random.uniform(0.66, 0.69), 4)
-
-            # 2. Assign remaining probability to other classes (ensures sum is 1.0)
-            remaining_prob = 1.0 - final_confidence
-            control_prob = round(remaining_prob * 0.8, 4)
-            prodromal_prob = round(remaining_prob * 0.2, 4)
-
 
 
             # for pl in selected_planes:
