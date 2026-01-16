@@ -426,19 +426,6 @@ async def predict_stream(file: UploadFile = File(...), plane_choice: str = Form(
             control_prob = round(remaining_prob * 0.8, 4)
             prodromal_prob = round(remaining_prob * 0.2, 4)
 
-            final_label = "control" # Assume PD is the temporary outcome
-
-            result = {
-                "final_label": final_label,
-                "final_confidence": float(final_confidence),
-                "per_class": {
-                    "control": float(control_prob),
-                    "pd": float(final_confidence),
-                    "prodromal": float(prodromal_prob)
-                },
-                "plane_details": plane_details # Use the plane_details populated above
-            }
-            # --- END TEMPORARY OVERRIDE ---
 
 
             # for pl in selected_planes:
