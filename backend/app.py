@@ -1,4 +1,4 @@
-# backend/app.py
+# backend
 import os
 import zipfile
 import tempfile
