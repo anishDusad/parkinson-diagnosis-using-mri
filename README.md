@@ -62,3 +62,10 @@ parkinson-diagnosis-using-mri/
 ### Backend setup
 
 Go to the backend directory:
+
+
+Create a virtual environment:
+
+Activate the environment:
+
+Windows:
