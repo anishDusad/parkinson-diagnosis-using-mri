@@ -15,17 +15,22 @@ This project is for educational and demonstration purposes only.
 
 ## Project structure
 
+## Project structure
+
+```text
 parkinson-diagnosis-using-mri/
 ├── backend/
-│ ├── app.py
-│ ├── model/
-│ ├── utils.py
-│ ├── requirements.txt
+│   ├── app.py
+│   ├── model/
+│   ├── utils.py
+│   ├── requirements.txt
 │
 ├── frontend-react/
-│ ├── public/
-│ ├── src/
-│ ├── package.json
+│   ├── public/
+│   ├── src/
+│   ├── package.json
 │
 ├── .gitignore
 └── README.md
+```
+
