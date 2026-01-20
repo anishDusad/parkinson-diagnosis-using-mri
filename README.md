@@ -34,3 +34,31 @@ parkinson-diagnosis-using-mri/
 └── README.md
 ```
 
+
+## Tech stack
+
+### Backend
+- Python
+- Flask or similar lightweight framework
+- Machine learning libraries
+- OpenCV or PIL for image processing
+
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+
+## How it works
+
+1. A user uploads an MRI scan through the frontend.
+2. The image is sent to the backend API.
+3. The backend preprocesses the image.
+4. The trained model runs inference on the MRI scan.
+5. The result is returned and displayed to the user.
+
+## Setup instructions
+
+### Backend setup
+
+Go to the backend directory:
