@@ -15,3 +15,17 @@ This project is for educational and demonstration purposes only.
 
 ## Project structure
 
+parkinson-diagnosis-using-mri/
+├── backend/
+│ ├── app.py
+│ ├── model/
+│ ├── utils.py
+│ ├── requirements.txt
+│
+├── frontend-react/
+│ ├── public/
+│ ├── src/
+│ ├── package.json
+│
+├── .gitignore
+└── README.md
