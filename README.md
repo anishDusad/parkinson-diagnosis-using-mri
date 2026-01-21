@@ -59,7 +59,7 @@ parkinson-diagnosis-using-mri/
 
 ## Setup instructions
 
-Backend setup
+### Backend setup
 
 Go to the backend directory:
 ```
@@ -92,7 +92,7 @@ Run the backend server:
 ```
 python app.py
 ```
-Frontend setup
+### Frontend setup
 
 Go to the frontend directory:
 ```
