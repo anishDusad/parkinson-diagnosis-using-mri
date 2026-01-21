@@ -62,48 +62,49 @@ parkinson-diagnosis-using-mri/
 Backend setup
 
 Go to the backend directory:
-
+```
 cd backend
-
+```
 
 Create a virtual environment:
-
+```
 python -m venv venv
-
+```
 
 Activate the virtual environment:
 
 Windows
-
+```
 venv\Scripts\activate
-
+```
 
 macOS / Linux
-
+```
 source venv/bin/activate
-
+```
 
 Install Python dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 
 Run the backend server:
-
+```
 python app.py
-
+```
 Frontend setup
 
 Go to the frontend directory:
-
+```
 cd frontend-react
-
+````
 
 Install dependencies:
-
+```
 npm install
-
+```
 
 Start the development server:
-
+```
 npm start
+```
