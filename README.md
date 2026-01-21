@@ -39,16 +39,12 @@ parkinson-diagnosis-using-mri/
 
 ### Backend
 - FastAPI – High-performance backend API for MRI upload, inference, and streaming responses
-
 - PyTorch – Deep learning framework for CNN-based Parkinson’s disease classification
-
 - ANTs / ANTsPy – Medical-grade MRI preprocessing (skull stripping & MNI registration)
-
 - DICOM → NIfTI Pipeline – Clinical MRI handling using dicom2nifti and nibabel
-
 - Multi-View CNN Ensemble – Axial, coronal, and sagittal slice-based inference with weighted fusion
-
 - Real-Time Streaming Logs – Progress updates during long MRI preprocessing and inference
+
 ### Frontend
 - React
 - JavaScript
