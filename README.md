@@ -14,7 +14,6 @@ The goal of this project is to demonstrate how medical imaging and machine learn
 This project is for educational and demonstration purposes only.
 
 
-
 ## Project structure
 
 ```text
