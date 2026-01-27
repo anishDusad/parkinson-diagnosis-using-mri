@@ -35,7 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# ----------------------------------------
 
 # ---------------- CONFIG ----------------
 AXIAL_MODEL_PATH = "models/axial_cnn15_final.pth"
