@@ -197,7 +197,7 @@ def predict_slices(slices: List[np.ndarray], model):
     return np.vstack(outputs)
 
 #  CORE LOGIC (Refactored to be usable by both Endpoints)
-# ---------------------------------------------------------
+
 
 def run_prediction_logic(nifti_path, plane_choice, logger_func=None):
     """
