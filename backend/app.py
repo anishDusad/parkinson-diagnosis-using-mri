@@ -195,7 +195,7 @@ def predict_slices(slices: List[np.ndarray], model):
             outputs.append(prob)
             
     return np.vstack(outputs)
-# ---------------------------------------------------------
+
 #  CORE LOGIC (Refactored to be usable by both Endpoints)
 # ---------------------------------------------------------
 
