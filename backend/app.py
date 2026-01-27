@@ -92,7 +92,6 @@ inference_transform = transforms.Compose([
 ])
 
 #  HELPER FUNCTIONS (Modified to NOT print, but just run)
-# ---------------------------------------------------------
 def save_upload_to_tempfile(upload: UploadFile) -> str:
     suffix = os.path.splitext(upload.filename)[1]
     fn = tempfile.NamedTemporaryFile(delete=False, suffix=suffix)
