@@ -91,7 +91,6 @@ inference_transform = transforms.Compose([
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-# ---------------------------------------------------------
 #  HELPER FUNCTIONS (Modified to NOT print, but just run)
 # ---------------------------------------------------------
 def save_upload_to_tempfile(upload: UploadFile) -> str:
