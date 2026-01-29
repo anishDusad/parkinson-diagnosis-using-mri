@@ -33,7 +33,6 @@ parkinson-diagnosis-using-mri/
 
 
 ## Tech stack
-
 ### Backend
 - FastAPI – High-performance backend API for MRI upload, inference, and streaming responses
 - PyTorch – Deep learning framework for CNN-based Parkinson’s disease classification
