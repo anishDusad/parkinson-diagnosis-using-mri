@@ -1,5 +1,3 @@
-# backend/app.py
-
 import os
 import zipfile
 import tempfile
@@ -37,7 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# ----------------------------------------
 
 # ---------------- CONFIG ----------------
 AXIAL_MODEL_PATH = "models/axial_cnn15_final.pth"
@@ -94,10 +91,7 @@ inference_transform = transforms.Compose([
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-# ---------------------------------------------------------
 #  HELPER FUNCTIONS (Modified to NOT print, but just run)
-# ---------------------------------------------------------
-
 def save_upload_to_tempfile(upload: UploadFile) -> str:
     suffix = os.path.splitext(upload.filename)[1]
     fn = tempfile.NamedTemporaryFile(delete=False, suffix=suffix)
@@ -201,9 +195,9 @@ def predict_slices(slices: List[np.ndarray], model):
             outputs.append(prob)
             
     return np.vstack(outputs)
-# ---------------------------------------------------------
+
 #  CORE LOGIC (Refactored to be usable by both Endpoints)
-# ---------------------------------------------------------
+
 
 def run_prediction_logic(nifti_path, plane_choice, logger_func=None):
     """
