@@ -304,7 +304,7 @@ def run_prediction_logic(nifti_path, plane_choice, logger_func=None):
 #     log(f"🎉 Temporary Prediction complete! Result: {final_label} @ {final_confidence*100:.2f}%")
 #     return result
 
-    # --- END TEMPORARY OVERRIDE ---
+    # --- END TEMPORARY OVERRIDE 
 
 # ---------------------------------------------------------
 #  ENDPOINT 1: JSON (Wait for everything, return JSON)
