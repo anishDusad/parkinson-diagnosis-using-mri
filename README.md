@@ -31,7 +31,6 @@ parkinson-diagnosis-using-mri/
 └── README.md
 ```
 
-
 ## Tech stack
 ### Backend
 - FastAPI – High-performance backend API for MRI upload, inference, and streaming responses
