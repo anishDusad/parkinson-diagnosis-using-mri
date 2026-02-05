@@ -361,6 +361,7 @@ async def predict_stream(file: UploadFile = File(...), plane_choice: str = Form(
             # We define a custom logger that yields back to the stream
             # Note: Since the logic is blocking (CPU heavy), we might see pauses
             logs_queue = []
+            
             def queue_logger(msg):
                 logs_queue.append(msg + "\n")
 
